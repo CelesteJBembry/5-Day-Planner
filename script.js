@@ -4,6 +4,19 @@ $('#currentDay').text(currentDate)
     console.log(currentDate);
 
 
+      // Get value on button click and show alert
+      $(".saveBtn").click(function(){
+          var str = $("#myInput").val();
+          console.log(str);
+          console.log($(this))
+      });
+
+
+
+
+
+
+
 //local storage
 var storedData = JSON.parse(localStorage.getItem("storedData"));
 console.log(storedData)
@@ -37,15 +50,15 @@ document.getElementById("description").appendChild(userInput);
 //$(document).on('click','i', function(event) {event.preventDefault();}
 
 //button
-var saveBtn = saveBtn
+//var saveBtn = saveBtn
 
-for (var i = 0; i < saveBtn.length; i++) {
-  var descriptionBtn = $("<button>");
-  saveBtn.addClass("saveBtn");
-  saveBtn.attr("data-letter", store[i]);
-  saveBtn.text(store[i])
-  $("#saveBtn").append(letterBtn);
-}
+//for (var i = 0; i < saveBtn.length; i++) {
+ // var descriptionBtn = $("<button>");
+ // saveBtn.addClass("saveBtn");
+  //saveBtn.attr("data-letter", store[i]);
+  //saveBtn.text(store[i])
+  //$("#saveBtn").append(letterBtn);
+//}
 
 //color 
 
